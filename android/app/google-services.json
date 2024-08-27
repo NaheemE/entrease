@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "627736690924",
+    "project_id": "entries-e6a10",
+    "storage_bucket": "entries-e6a10.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:627736690924:android:8c1891ba9c0639efe8a5c9",
+        "android_client_info": {
+          "package_name": "com.entrease"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZGuR-snyFtePWpeyHftNGdtersdtugC4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
