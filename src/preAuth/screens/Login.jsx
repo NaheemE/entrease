@@ -1,9 +1,10 @@
 import {Alert, Image, Keyboard, ScrollView, StyleSheet, Text, TouchableOpacity, TouchableWithoutFeedback, View} from 'react-native';
 import React, {useEffect, useState} from 'react';
-import logo from '/Faircode/entrease/src/images/Entries.png';
-import CostomInput from '../components/CostomInput';
 import {useForm, Controller} from 'react-hook-form';
 import firestore from '@react-native-firebase/firestore';
+import logo from '../../images/Entries.png'
+import CostomInput from '../components/CostomInput'
+import { Colors } from '../../config/colors'
 
 
 export default function Login({navigation}) {
@@ -61,7 +62,7 @@ export default function Login({navigation}) {
                 <TouchableOpacity
                   onPress={handleSubmit(onLoginPressed)}
                   style={{
-                    backgroundColor: '#0075FF',
+                    backgroundColor: Colors.primary',
                     height: 50,
                     borderRadius: 5,
                     justifyContent: 'center',
