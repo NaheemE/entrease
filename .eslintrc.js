@@ -3,5 +3,6 @@ module.exports = {
   extends: '@react-native',
   rules: {
     quotes: 'off',
+    semi: [ "never"]
   },
 };

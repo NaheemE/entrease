@@ -9,7 +9,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Colors } from './src/config/colors';
 import History from './src/postAuth/screens/History';
 import Profile from './src/postAuth/screens/Profile';
-
+import Icon from 'react-native-vector-icons/Entypo';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -24,8 +24,13 @@ const BottomTabNavigator = () => {
       tabBarIconStyle: {
         marginTop: 8,
       },
+      tabBarInactiveTintColor: 'white',
+      tabBarActiveTintColor: '#3cdfff'
     }} >
-      <Tab.Screen name="Home" component={Home} options={{ headerShown: false }} />
+      <Tab.Screen name="Home" component={Home} options={{
+        headerShown: false, tabBarIcon: ({ focused }) => (<Icon name='home' size={30} color={focused ? '#3cdfff' : 'white'} />
+        )
+      }} />
       <Tab.Screen name='History' component={History} />
       <Tab.Screen name='Profile' component={Profile} />
     </Tab.Navigator>
@@ -38,10 +43,10 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Login" component={Login}
+        {/* <Stack.Screen name="Login" component={Login}
           options={{ headerShown: false }}
         />
-        <Stack.Screen name="Register" component={Register} />
+        <Stack.Screen name="Register" component={Register} /> */}
         <Stack.Screen
           name="HomeTabs"
           component={BottomTabNavigator}
